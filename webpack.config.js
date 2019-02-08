@@ -10,6 +10,10 @@ module.exports = {
         port: 8080,
         contentBase: './public'
     },
+    // Webpack 4.0 does not accept empty anymore
+    resolve: {
+        extensions: ['.js', '.jsx']
+    },
     module: {
         rules: [
             {
